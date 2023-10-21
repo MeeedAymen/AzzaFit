@@ -345,17 +345,18 @@ li{
 }
 
 .contact-form{
-    margin-left: 200px;
+    padding-top:70px;
+    margin-left: 170px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .contact-us{
     font-family: 'Inter';
     font-style: initial;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 15px;
-    margin-left: 20px;
+    margin-left: 200px;
     color: red;
 }
 .contact-input{
@@ -364,6 +365,7 @@ li{
     padding-right: 190px;
     padding-left: 5px;
     padding-top: 13px;
+    margin-left: 200px;
     border: 1px solid rgb(149, 149, 149);
     border-radius: 5px;
     outline: none;
@@ -371,6 +373,7 @@ li{
 
 .contact-input::placeholder{
     color: rgb(149, 149, 149);
+    display: flex;
 }
 
 .contact-input-msg{
@@ -380,6 +383,7 @@ li{
     padding-right: 202px;
     padding-left: 5px;
     padding-bottom: 90px;
+    margin-left: 200px;
     border: 1px solid rgb(149, 149, 149);
     border-radius: 5px;
     outline: none;
@@ -393,13 +397,13 @@ li{
     border-radius: 10px;
     color: rgb(255, 255, 255);
     padding: 7px 30px;
-    margin-left: 25px;
+    margin-left: 220px;
 }
 
 .contact-img{
     border: 10px solid red;
-    height: 300px;
-    width: 500px;
+    height: 350px;
+    width: auto;
 }
 .copyright{
     display: flex;
