@@ -336,9 +336,13 @@ li{
 }
 .footer-btn{
     color: black;
-
 }
-.contact-section{
+.footer-btn:hover{
+    color: white;
+    font-size: 22px;
+    transition: 1s ease;
+}
+#contact-section{
     
     background-color: rgb(49, 49, 49);
     height: 500px;
@@ -411,6 +415,6 @@ li{
     color: white;
     font-family: 'Inter';
     font-style: italic;
-    margin-top: 110px;
+    margin-top: 90px;
 
 }
