@@ -13,12 +13,9 @@ overflow-x: hidden ;
     height: 100vh;
 }
 .logo{
-    position: absolute;
-    width: 267px;
-    height: 89px;
-    left: 5px;
-    top: 10px;
-    
+    width: 157px;
+    height: 80px;
+    margin: 8px auto;
 }
 .home-color a{
     color: rgb(255, 130, 130);
@@ -27,11 +24,14 @@ overflow-x: hidden ;
     color:red
 }
 
+
+
 li, a, button, .btn-contact {
     font-family: poppins, sans-serif;
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
+    margin:4px;
     list-style: none;
     color: white;
 }
@@ -53,7 +53,7 @@ li{
 .navlist{
     display: flex;
     justify-content: space-between;
-    gap: 80px;  
+    gap: 50px;  
 }
 
 .hover-color a:hover{
@@ -75,12 +75,12 @@ li{
     border: 1px solid red;
 }
 .container {
-    height: 100vh;
+    height: 104.5vh;
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100vw;
 
 }
 .text-container {
@@ -126,14 +126,14 @@ li{
     margin-left: 55px;
 }
 .home-img{  
-    padding-top: 9.5rem;            
+    margin-top: 9.5rem;            
     width: 420px;
 }
 
 
 .why-us-div{
     background-color: rgb(49, 49, 49);
-    height: 98vh;
+    height: 100vh;
 }
 
 .why-us-title{
@@ -145,9 +145,9 @@ li{
 }
 
 .why-us{
-    display: flex;
     font-family: 'Inter';
     font-style: normal;
+    display: flex;
     font-size: 55px ;
     padding-top: 30px;
     justify-content: center;
@@ -197,12 +197,14 @@ li{
     height: 500px;
     background-color: red;
 }
+
 .img3{
     height: 230px;
     width: 370px;
     margin-top: 3.7%;
     margin-left: 3.5%;
 }
+
 .card-title{
     font-family: 'Inter';
     font-style: normal;
@@ -211,6 +213,7 @@ li{
     margin-left: 30px;
     margin-top: 10px;
 }
+
 .card-par{
     font-family: 'Inter';
     font-style: normal;
@@ -219,6 +222,7 @@ li{
     margin-left: 35px;
     margin-bottom: 25px;
 }
+
 .learn-more{
     font-size: 17px;
     text-decoration: underline;
@@ -298,6 +302,129 @@ li{
     transition: 0.7s;
 }
 
+/* ________________________________________________________________________ */
+.faq-section{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border:0.5px solid white;
+    width: 650px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.question:hover h3{
+    color: #fb2a00;
+}
+
+h3 {
+    color: #fff;
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+    color: white;
+    padding-top: 10px;
+}
+
+.answer p {
+    margin: 0;
+}
+
+.faq-title{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    font-family: 'Inter';
+    font-style: initial;
+    padding-top: 20px;
+    color: #fb2a00;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.contact-section{
+    font-family: 'Inter';
+    font-style: initial;
+    background-color: black;
+    height: 500px;
+}
+
+.contact-form{
+    padding-top:70px;
+    margin-left: 170px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.contact-us{
+    font-family: 'Inter';
+    font-style: initial;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-left: 200px;
+    color: red;
+}
+.contact-input{
+    background-color: black;
+    margin-top: 5px;
+    padding-right: 190px;
+    padding-left: 5px;
+    padding-top: 13px;
+    margin-left: 200px;
+    border: 1px solid rgb(149, 149, 149);
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-input::placeholder{
+    color: rgb(149, 149, 149);
+    display: flex;
+}
+
+.contact-input-msg{
+    background-color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-right: 202px;
+    padding-left: 5px;
+    padding-bottom: 90px;
+    margin-left: 200px;
+    border: 1px solid rgb(149, 149, 149);
+    border-radius: 5px;
+    outline: none;
+    height: 100px;
+    margin-bottom: 23px !important;
+}
+.contact-input-msg::placeholder{
+    color: rgb(149, 149, 149);
+}
+
+.contact-submit{
+    background-color: red;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 7px 30px;
+    margin-left: 220px;
+}
+
+.contact-img{
+    border: 10px solid red;
+    height: 350px;
+    width: auto;
+}
 .footer-section{
     display: flex;
     background-color:  rgb(93, 93, 93);
@@ -336,78 +463,7 @@ li{
 }
 .footer-btn{
     color: black;
-}
-.footer-btn:hover{
-    color: white;
-    font-size: 22px;
-    transition: 1s ease;
-}
-#contact-section{
-    
-    background-color: rgb(49, 49, 49);
-    height: 500px;
-}
 
-.contact-form{
-    padding-top:70px;
-    margin-left: 170px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-}
-.contact-us{
-    font-family: 'Inter';
-    font-style: initial;
-    font-size: 40px;
-    margin-bottom: 15px;
-    margin-left: 200px;
-    color: red;
-}
-.contact-input{
-    background-color: rgb(49,49,49);
-    margin-top: 5px;
-    padding-right: 190px;
-    padding-left: 5px;
-    padding-top: 13px;
-    margin-left: 200px;
-    border: 1px solid rgb(149, 149, 149);
-    border-radius: 5px;
-    outline: none;
-}
-
-.contact-input::placeholder{
-    color: rgb(149, 149, 149);
-    display: flex;
-}
-
-.contact-input-msg{
-    background-color: rgb(49,49,49);
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding-right: 202px;
-    padding-left: 5px;
-    padding-bottom: 90px;
-    margin-left: 200px;
-    border: 1px solid rgb(149, 149, 149);
-    border-radius: 5px;
-    outline: none;
-}
-.contact-input-msg::placeholder{
-    color: rgb(149, 149, 149);
-}
-
-.contact-submit{
-    background-color: red;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    padding: 7px 30px;
-    margin-left: 220px;
-}
-
-.contact-img{
-    border: 10px solid red;
-    height: 350px;
-    width: auto;
 }
 .copyright{
     display: flex;
@@ -415,6 +471,58 @@ li{
     color: white;
     font-family: 'Inter';
     font-style: italic;
-    margin-top: 90px;
-
+    margin-top: 100px;
 }
+
+ .azazaz{
+    color: #fff;
+    margin-bottom: 3px;
+    padding: 10px;
+    width: 450px;
+    border-radius: 10px;
+ }
+ .close{
+    display: none;
+ }
+
+ @media screen and (max-width: 980px) {
+    .close{
+        display: block;
+        color: white;
+
+    }
+     .bar-menu{
+        z-index: 1;
+        color: #fff;
+     }
+     .logo  {
+        display: none;
+     }
+     ul{
+        display: flex;
+        transition: all 1s ease;
+        flex-direction: column;
+        background-color: rgb(78, 0, 0);
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        z-index: 2;
+        top:0;
+        left:-300px;
+     }
+     li{
+        margin:auto;
+     }
+ }
+ /* .card p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+ } */
+
+/* @media{
+    .azazaz{
+
+    }
+} */
+

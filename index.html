@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
     <title>AzzaFit</title>
+    <script defer src="./index.js"></script>
 </head>
 <body>
    <section class="home-main">
-        <header class="header11">
-            <nav class="header-spaces"></nav>
-            <ul class="navlist">
-                <img src="images/logo AzzaFit.png" alt="Logo" class="logo">
-                <li class="home-color"><a href="#home">Home</a><li>
-                <li class="hover-color"><a href="#schedule">Schedule</a><li>
-                <li class="hover-color"><a href="#store">Store</a><li>
-                <li class="hover-color"><a href="#contact">Contact</a><li>
-                <li class="hover-color"><a href="#faq">FAQ</a><li>
-            </ul>
+       <header class="header11">
+            <p class="bar-menu">
+             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="55" height="55" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l16 0"></path>
+                    <path d="M4 12l16 0"></path>
+                    <path d="M4 18l16 0"></path>
+                 </svg>
+            </p>
+            <nav class="header-spaces">
+                <ul class="navlist">
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                     </svg>
+                    <img src="images/logo AzzaFit.png" alt="Logo" class="logo">
+                    <li class="hover-color"><a href="#home">Home</a><li>
+                    <li class="hover-color"><a href="schedule.html">Schedule</a><li>
+                    <li class="hover-color"><a href="store.html">Store</a><li>
+                    <li class="hover-color"><a href="#contact-section">Contact</a><li>
+                    <li class="hover-color"><a href="#FAQ">FAQ</a><li>
+                </ul>
+            </nav>
             <!-- <button class="btn-contact"> -->
-            <a href="#contact-section" class="btn-contact"> Contact Us </a>
+            <a href="#contact-section" class="btn-contact"> Log In </a>
             <!-- </button> -->
         </header>
         
@@ -28,10 +44,10 @@
             <div class="text-container">
                 <h1 class="home-title"><span class="life">Life</span> is Motion</h1>
                 <p class="home-paragraphe">In this day in age, keeping fit has become<br>one of the top activities for someone to do<br> in their free time. A popular way to stay in<br> shape is by going to the gym, with multiple<br> different types of workouts you can do,<br> from weight lifting to light cardio.</p>
-                <a href="join-us" class="btn-contact2"> Join Us  </a>
+                <a href="#contact-section" class="btn-contact2"> Join Us  </a>
             </div>
-            <div>
-                <img src="images/home image.png" alt="image" class="home-img">
+            <div >
+                <img    src="images/home image.png" alt="image" class="home-img">
             </div>
         </div>
 
@@ -70,17 +86,59 @@
             </div>
             <img src="images/about-img.jpg" alt="image" class="about-img">
         </div>
-        
-        <section id="contact-section">                       
+
+        <!-- faq___________________________________________________ -->
+        <h1 class="faq-title">FAQs</h1>
+        <section class="FAQ" id="FAQ">
+            <div class="faq-section">
+            
+                <!-- <div class="Q-and-A"> -->
+                <div class="faq-img">
+                    <img src="images/faq-img.png" alt="image">
+                </div>
+                <div class="faqs">
+                        <div class="question">
+                            <h3>Quels sont les horaires d'ouverture de la salle de musculation ?</h3>
+                            <div class="answer">
+                            <p>La salle de musculation est ouverte du lundi au vendredi de 6h00 à 22h00, et le samedi et le dimanche de 8h00 à 20h00.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="question">
+                            <h3>Quels équipements de musculation sont disponibles dans la salle ?</h3>
+                            <div class="answer">
+                            <p>Notre salle de musculation dispose d'une large gamme d'équipements, notamment des machines de musculation, des poids libres tels que des haltères et des barres, des bancs de musculation, des tapis de course, des vélos elliptiques, etc.</p>
+                            </div>
+                        </div>
+    
+                        <div class="question">
+                            <h3>Puis-je obtenir un programme d'entraînement personnalisé ?</h3>
+                            <div class="answer">
+                            <p>Absolument ! Nos entraîneurs professionnels sont là pour vous aider à élaborer un programme d'entraînement adapté à vos objectifs et à votre niveau de condition physique. Ils vous fourniront des conseils d'entraînement et vous accompagneront tout au long de votre parcours.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="question">
+                            <h3>Est-ce que la salle de musculation propose des cours collectifs ?</h3>
+                            <div class="answer">
+                            <p>Oui, nous proposons une variété de cours collectifs tels que le bodypump, le yoga, le cycling, le circuit training, etc. Ces cours sont inclus dans votre abonnement et offrent une excellente opportunité de s'entraîner en groupe et de diversifier votre routine d'exercice.</p>
+                            </div>
+                        </div>   
+                    </div>     
+                </div>
+        </section>
+
+
+        <section class="contact-section" id="contact-section">                       
             <div class="contact-form">
                 <img src="images/img5.jpg" alt="image" class="contact-img">
-                <form>
+                <form id="forme" action="/">
                     <h1 class="contact-us">Contact Us</h1>
-                    <input type="text" placeholder="Nom" class="contact-input"><br>
-                    <input type="text" placeholder="Prenon" class="contact-input"><br>
-                    <input type="email" placeholder="Email" class="contact-input"><br>
-                    <textarea placeholder="Message" class="contact-input-msg"></textarea><br>            
-                    <a href="#" class="contact-submit">Submit</a>         
+                    <input type="text" placeholder="Nom" class="contact-input azazaz" id="nameInput"><br>
+                    <input type="text" placeholder="Prenon" class="contact-input azazaz" id="lastNameInput"><br>
+                    <input type="email" placeholder="Email" class="contact-input azazaz" id="emailInput"><br>
+                    <textarea placeholder="Message" class="contact-input-msg azazaz" id="messageInput"></textarea><br>            
+                    <a href="#contact-section" class="contact-submit">Submit</a>         
                 </form> 
             </div>
         </section>
@@ -91,6 +149,7 @@
                 <div class="footer-links">
                     <h5 class="quick-links">Quick links</h5>
                     <div class="btns">
+                       
                         <a href="#" class="footer-btn">Home</a>
                         <a href="#" class="footer-btn">Schedule</a>
                         <a href="#" class="footer-btn">Store</a>
@@ -101,9 +160,23 @@
                 </div>
             </div>
         </footer>   
-   </section>
+    </div>
 
+    <script src="./index.js"></script>
+    <script>
+         let form = document.getElementById("forme");
+         let nameInput = document.getElementById("forme");
+         let lastNameInput = document.getElementById("lastNameInput");
+         let emailInput = document.getElementById("emailInput");
+         let messageInput = document.getElementById("messageInput");
+         form.addEventListener("submit",(e)=>{
+            e.preventDefault();
 
+            let 
+            
+
+         })
+    </script>
 
 </body>
 </html>
