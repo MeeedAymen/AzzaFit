@@ -15,64 +15,6 @@ body{
     height: 15vh;
 }
 
-.logo{
-    position: absolute;
-    width: 267px;
-    height: 89px;
-    left: 0px;
-    top: 10px;
-    
-}
-
-li, a, button, .btn-contact {
-    font-family: poppins, sans-serif;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-    list-style: none;
-    color: white;
-}
-.header11{
-    width: 95%;
-    margin-left: 5%;
-    display: flex;
-    position: absolute;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;  
-}
-
-li{
-    margin-top: 3rem;
-}
-
-
-.navlist{
-    display: flex;
-    margin-left: 150px;
-    justify-content: space-between;
-    gap: 50px;  
-}
-
-.hover-color a:hover{
-    color: red;
-}
-
-.btn-contact{
-    color: white;
-    background-color: black;
-    padding: 4px 30px;
-    border: 1px solid white;
-    border-radius: 15px ;
-    margin-right: 8rem;
-    margin-top: 3rem;
-}
-
-.btn-contact:hover{
-    color: red;
-    border: 1px solid red;
-}
-
 
 .why-us-div{
     height: auto;
@@ -98,9 +40,10 @@ li{
 .cards{
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 40px;   
+    padding-bottom: 40px;
+    gap: 20px;
 }
 
 .card1{
@@ -116,7 +59,6 @@ li{
     margin-top: 3.7%;
     margin-left: 3.5%;
     border-radius: 10px;
-
 }
 
 .card2{
@@ -280,6 +222,19 @@ li{
     flex-direction: row;
     padding-left: 80px;
 }
+
+@media screen and (max-width: 400px) {
+    .card1 {
+      margin: 20px;
+    }
+    .img1{
+        height: 230px;
+        width: 320px;
+        margin-top: 3.7%;
+        margin-left: 3.5%;
+        border-radius: 10px;
+    }
+  }
 
    
 /*     

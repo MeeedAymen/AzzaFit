@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="storeStyle.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>AzzaFit</title>
 </head>
 <body>
    <section class="home-main">
-        <header class="header11">
-            <nav class="header-spaces"></nav>
+    <header class="header11">
+        <p class="bar-menu">
+         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="55" height="55" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+             </svg>
+        </p>
+        <nav class="header-spaces">
             <ul class="navlist">
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                 </svg>
                 <img src="images/logo AzzaFit.png" alt="Logo" class="logo">
-                <li class="home-color"><a href="index.html">Home</a><li>
+                <li class="hover-color"><a href="#home">Home</a><li>
                 <li class="hover-color"><a href="schedule.html">Schedule</a><li>
-                <li class="hover-color"><a href="#store">Store</a><li>
-                <li class="hover-color"><a href="index.html#contact-section">Contact</a><li>
-                <li class="hover-color"><a href="index.html">FAQ</a><li>
+                <li class="hover-color"><a href="store.html">Store</a><li>
+                <li class="hover-color"><a href="#contact-section">Contact</a><li>
+                <li class="hover-color"><a href="#FAQ">FAQ</a><li>
             </ul>
-            <a href="index.html#contact-section" class="btn-contact"> Log In </a>
-        </header>
+        </nav>
+        <!-- <button class="btn-contact"> -->
+        <a href="#contact-section" class="btn-contact"> Log In </a>
+        <!-- </button> -->
+    </header>
    </section>    
         <div class="why-us-div">
             <div class="why-us-title">
@@ -36,16 +53,16 @@
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card2">
-                    <img src="images/img2.jpg" alt="image" class="img2">
+                <div class="card1">
+                    <img src="images/img2.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title1">Our Gym</h1>
                         <h1 class="price">1739$</h1>
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card3">
-                    <img src="images/ca3.jpg" alt="image" class="img3">
+                <div class="card1">
+                    <img src="images/ca3.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title">Dumbolles</h1>
                         <h1 class="price">999$</h1>
@@ -55,7 +72,7 @@
             </div>
 
             <div class="cards">
-                <div class="card11">
+                <div class="card1">
                     <img src="images/37013.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title122">Training</h1>
@@ -63,16 +80,16 @@
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card22">
-                    <img src="images/img2.jpg" alt="image" class="img2">
+                <div class="card1">
+                    <img src="images/img2.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title1122">Our Gym</h1>
                         <h1 class="price">959$</h1>
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card33">
-                    <img src="images/img1.jpg" alt="image" class="img3">
+                <div class="card1">
+                    <img src="images/img1.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title122">Coaches</h1>
                         <h1 class="price">789$</h1>
@@ -90,7 +107,7 @@
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card2">
+                <div class="card1">
                     <img src="images/img2.jpg" alt="image" class="img2">
                     <div class="title-and-price">
                         <h1 class="card-title1">Our Gym</h1>
@@ -99,8 +116,8 @@
 
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card3">
-                    <img src="images/img1.jpg" alt="image" class="img3">
+                <div class="card1">
+                    <img src="images/img1.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title">Coaches</h1>
                         <h1 class="price">9536$</h1>
@@ -110,7 +127,7 @@
             </div>
 
             <div class="cards">
-                <div class="card11">
+                <div class="card1">
                     <img src="images/37013.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title122">Training</h1>
@@ -118,16 +135,16 @@
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card22">
-                    <img src="images/img2.jpg" alt="image" class="img2">
+                <div class="card1">
+                    <img src="images/img2.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title1122">Our Gym</h1>
                         <h1 class="price">745$</h1>
                     </div>
                     <a href="#home" class="learn-more">Shop here</a>
                 </div>
-                <div class="card33">
-                    <img src="images/img1.jpg" alt="image" class="img3">
+                <div class="card1">
+                    <img src="images/img1.jpg" alt="image" class="img1">
                     <div class="title-and-price">
                         <h1 class="card-title122">Coaches</h1>
                         <h1 class="price">6854$</h1>
@@ -136,25 +153,97 @@
                 </div>
             </div>
         </div>
-        <!-- <footer>
-            <div class="footer-section">
-                <h1 class="footer-title"><span class="azza">Azza</span>Fit</h1>
-                <div class="footer-links">
-                    <h5 class="quick-links">Quick links</h5>
-                    <div class="btns">
-                        <a href="#" class="footer-btn">Home</a>
-                        <a href="#" class="footer-btn">Schedule</a>
-                        <a href="#" class="footer-btn">Store</a>
-                        <a href="#" class="footer-btn">Contact</a>
-                        <a href="#" class="footer-btn">FAQ</a>
-                    </div>
-                    <p class="copyright">2023 - 2024 My Log Travels. All Rights Reserved.</p>
-                </div>
+          <!-- Site footer -->
+          <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo"><img src="images/logo AzzaFit.png" alt="Logo" class="logo"></h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                5534 Somewhere In. The World 22193-10212<br>
+                    
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+              </address>
             </div>
-        </footer>    -->
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="#">Hardware Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Software Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Digital Signage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Automation</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Artificial Intelligence</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">IoT</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> Aymane Azza</span>
+              </div>
+            </div>
+          </footer>
 
-
-
+        <script src="./index.js"></script>
 </body>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </html>

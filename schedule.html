@@ -3,26 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="schedule.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
     <title>AzzaFit</title>
 </head>
 <body>
-   <section class="home-main">
-        <header class="header11">
-            <nav class="header-spaces"></nav>
+   <section class="home-main2">
+    <header class="header11">
+        <p class="bar-menu">
+         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="55" height="55" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+             </svg>
+        </p>
+        <nav class="header-spaces">
             <ul class="navlist">
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                 </svg>
                 <img src="images/logo AzzaFit.png" alt="Logo" class="logo">
-                <li class="hover-color"><a href="index.html">Home</a><li>
-                <li class="hover-color"><a href="#scheduke">Schedule</a><li>
+                <li class="hover-color"><a href="#home">Home</a><li>
+                <li class="hover-color"><a href="schedule.html">Schedule</a><li>
                 <li class="hover-color"><a href="store.html">Store</a><li>
-                <li class="hover-color"><a href="index.html#contact-section">Contact</a><li>
+                <li class="hover-color"><a href="#contact-section">Contact</a><li>
                 <li class="hover-color"><a href="#FAQ">FAQ</a><li>
             </ul>
-            <a href="index.html#contact-section" class="btn-contact"> Log In </a>
-        </header>
+        </nav>
+        <!-- <button class="btn-contact"> -->
+        <a href="#contact-section" class="btn-contact"> Log In </a>
+        <!-- </button> -->
+    </header>
    </section>
    
    <div class="img-texte-schudele">
        <img src="images/sch.png" alt="image" class="bg-img">
     </div>
+
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Something</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2019 Something. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> Aymane Azza</span>
+          </div>
+        </div>
+      </footer>   
+
+    <script src="./index.js"></script>
+    </body>
+    </html>

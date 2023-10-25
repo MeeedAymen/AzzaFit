@@ -135,47 +135,170 @@
                 <form id="forme" action="/">
                     <h1 class="contact-us">Contact Us</h1>
                     <input type="text" placeholder="Nom" class="contact-input azazaz" id="nameInput"><br>
-                    <input type="text" placeholder="Prenon" class="contact-input azazaz" id="lastNameInput"><br>
+                    <input type="text" placeholder="Prenom" class="contact-input azazaz" id="lastNameInput"><br>
                     <input type="email" placeholder="Email" class="contact-input azazaz" id="emailInput"><br>
-                    <textarea placeholder="Message" class="contact-input-msg azazaz" id="messageInput"></textarea><br>            
-                    <a href="#contact-section" class="contact-submit">Submit</a>         
-                </form> 
+                    <textarea placeholder="Message" class="contact-input-msg azazaz" id="messageInput"></textarea><br>
+                    <button type="submit" class="contact-submit">Submit</button>
+                </form>
             </div>
         </section>
         
-        <footer>
-            <div class="footer-section">
-                <h1 class="footer-title"><span class="azza">Azza</span>Fit</h1>
-                <div class="footer-links">
-                    <h5 class="quick-links">Quick links</h5>
-                    <div class="btns">
-                       
-                        <a href="#" class="footer-btn">Home</a>
-                        <a href="#" class="footer-btn">Schedule</a>
-                        <a href="#" class="footer-btn">Store</a>
-                        <a href="#" class="footer-btn">Contact</a>
-                        <a href="#" class="footer-btn">FAQ</a>
-                    </div>
-                    <p class="copyright">2023 - 2024 My Log Travels. All Rights Reserved.</p>
-                </div>
+        <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo">Something</h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                5534 Somewhere In. The World 22193-10212<br>
+                    
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+              </address>
             </div>
-        </footer>   
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="#">Hardware Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Software Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Digital Signage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Automation</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Artificial Intelligence</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">IoT</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> Aymane Azza</span>
+              </div>
+            </div>
+          </footer>   
     </div>
 
     <script src="./index.js"></script>
     <script>
-         let form = document.getElementById("forme");
-         let nameInput = document.getElementById("forme");
-         let lastNameInput = document.getElementById("lastNameInput");
-         let emailInput = document.getElementById("emailInput");
-         let messageInput = document.getElementById("messageInput");
-         form.addEventListener("submit",(e)=>{
-            e.preventDefault();
+        const form = document.getElementById("forme");
+        const nameInput = document.getElementById("nameInput");
+        const lastNameInput = document.getElementById("lastNameInput");
+        const emailInput = document.getElementById("emailInput");
+        const messageInput = document.getElementById("messageInput");
 
-            let 
+        const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+$/;
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        let nameValue = nameInput.value.trim();
+        let lastNameValue = lastNameInput.value.trim();
+        let emailValue = emailInput.value.trim();
+        let messageValue = messageInput.value.trim();
+
+        function testInput(){
+            console.log("hhh");
+            nameInput.classList.remove("invalid");
+            lastNameInput.classList.remove("invalid");
+            emailInput.classList.remove("invalid");
+
+            nameValue = nameInput.value.trim();
+            lastNameValue = lastNameInput.value.trim();
+            emailValue = emailInput.value.trim();
+            messageValue = messageInput.value.trim();
+
+            let flag = true;
+
+            if (!nameRegex.test(nameValue)) {
+                nameInput.classList.add("invalid");
+                flag = false;
+            }
+
+            if (!nameRegex.test(lastNameValue)) {
+                lastNameInput.classList.add("invalid");
+                flag = false;
+            }
+
+            if (!emailRegex.test(emailValue)) {
+                emailInput.classList.add("invalid");
+                flag = false;
+            }
             
 
-         })
+            if (!nameRegex.test(messageValue)) {
+                messageInput.classList.add("invalid");
+                flag = false;
+            }
+            return flag;
+        }
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if(testInput())
+                alert("Formulaire soumis avec succès!");
+            else
+                alert("Veuillez entrer tous les Input!");
+
+        });
+
+        nameInput.addEventListener('change',testInput);
+        lastNameInput.addEventListener('change',testInput);
+        emailInput.addEventListener('change',testInput);
+        messageInput.addEventListener('change',testInput);
     </script>
 
 </body>
